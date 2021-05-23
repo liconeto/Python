@@ -1,0 +1,35 @@
+Desafios
+022 Crie um programa que leia o nome completo de uma pessoa e mostre:
+
+O nome com todas as letras em maiusculas
+O nome com todas as letras em minusculas
+Quantas letras ao desconsiderar os espaços
+Quantas letras tem o primeiro nome
+
+023 Faça um programa que leia um numero de 0 a 9999
+e mostre na tela cada um dos digitos separados.
+
+ex: 1834
+unidades: 4
+dezenas : 3
+centenas: 8
+milhar :  1
+com string e matematicamente
+
+024 Crie um programa que leia o nome de uma cidade e diga se ela começa
+ou não com o nome "SANTO".
+
+025 Crie um programa que leia nome de uma pessoa e diga se ela tem "SILVA" no nome
+
+026 Faça um programa que leia uma frase:
+
+Quantas vezes aparece a letra "A"
+Em que posição ela aparece a primeira vez
+Em que posição ela aparece a ultima vez
+
+027 Faça um programa que leia o nome completo de um pessoa, mostrando em seguida 
+o primeiro e o ultimo separadamente.
+
+Ex: Ana Maria de Souza
+primeiro : Ana
+ultimo : Souza
