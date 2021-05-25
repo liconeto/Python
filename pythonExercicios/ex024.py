@@ -1,6 +1,6 @@
 texto = ' Desafio 024 '
 print(' {:*^30}'. format(texto))
-cidade = input('Digite o nome da cidade : ')
+cidade = str(input('Digite o nome da cidade : ')).strip()
 
 cidade = cidade.split()
 
