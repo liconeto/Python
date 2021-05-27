@@ -1,35 +1,29 @@
-Desafios
-022 Crie um programa que leia o nome completo de uma pessoa e mostre:
+028 Escreva um programa que faça o computador "pensar" em um número
+inteiro entre 0 e 5 e peça para o usuário tentar descobrir qual foi o número
+escolhido pelo computador.
+O programa deverá escrever na tela se o usuário venceu ou perdeu
 
-O nome com todas as letras em maiusculas
-O nome com todas as letras em minusculas
-Quantas letras ao desconsiderar os espaços
-Quantas letras tem o primeiro nome
+029 Escreve um programa que leia a velocidade do carro.
+Se ele ultrapassar 80 km/h, mostre um mensagem dizendo que ele foi multado.
+A multa vai custar R$7,00 por cada km/h acima do limite.
 
-023 Faça um programa que leia um numero de 0 a 9999
-e mostre na tela cada um dos digitos separados.
+030 Crie um programa que leia um número inteiro e mostre na tela se ele é 
+PAR ou Impar
 
-ex: 1834
-unidades: 4
-dezenas : 3
-centenas: 8
-milhar :  1
-com string e matematicamente
+031 desenvolva um programa que pergunte a distâncoa de uma viagem em km.
+Calcule o preço da passagem, cobrando R$0.50 por km para viagens até 200
+ km e R$0.45 para viagens mais longas
 
-024 Crie um programa que leia o nome de uma cidade e diga se ela começa
-ou não com o nome "SANTO".
+032 Faça um programa que leia um ano qualquer e mostre se ele é BISSEXTO
 
-025 Crie um programa que leia nome de uma pessoa e diga se ela tem "SILVA" no nome
+033 Faça um programa que leia três números e mostre qual é o maior e
+ qual é o menor.
 
-026 Faça um programa que leia uma frase:
+034 Escreva um programa que pergunte o salario de um funcionario e calcule o valor do seu aumento.
 
-Quantas vezes aparece a letra "A"
-Em que posição ela aparece a primeira vez
-Em que posição ela aparece a ultima vez
+Para salarios superiores a R$1250,00, calcule um aumento de 10% 
+Para salarios inferiores ou iguais o aumento é de 15%
 
-027 Faça um programa que leia o nome completo de um pessoa, mostrando em seguida 
-o primeiro e o ultimo separadamente.
-
-Ex: Ana Maria de Souza
-primeiro : Ana
-ultimo : Souza
+035 Desevolva um programa que leia o comprimento de 3 retas e diga ao usuário
+se elas podem ou não formar um triangulo.
+principio matematico da regra dos triangulos 
