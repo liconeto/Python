@@ -24,6 +24,6 @@ Calcule o preço da passagem, cobrando R$0.50 por km para viagens até 200
 Para salarios superiores a R$1250,00, calcule um aumento de 10% 
 Para salarios inferiores ou iguais o aumento é de 15%
 
-035 Desevolva um programa que leia o comprimento de 3 retas e diga ao usuário
-se elas podem ou não formar um triangulo.
+035 Desevolva um programa que leia o comprimento de 3 retas e diga ao 
+usuário se elas podem ou não formar um triangulo.
 principio matematico da regra dos triangulos 
