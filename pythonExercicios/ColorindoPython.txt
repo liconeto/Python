@@ -1,7 +1,7 @@
 Colorindo o Python.
 Exemplo:
 Padrão ANSI
-\33[0;33;44m
+\033[0;33;44m
 Style of text
 0 none
 1 bold
