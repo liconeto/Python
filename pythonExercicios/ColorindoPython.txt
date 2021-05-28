@@ -1,0 +1,29 @@
+Colorindo o Python.
+Exemplo:
+Padrão ANSI
+\33[0;33;44m
+Style of text
+0 none
+1 bold
+4 underline
+7 negative
+
+Color of text
+30 white
+31 red
+32 green
+33 yellow
+34 blue
+35 magenta or purple
+36 ciano
+37 gray
+
+Back Ground
+40 white
+41 red
+42 green
+43 yellow
+44 blue
+45 magenta or purple
+46 ciano
+47 gray

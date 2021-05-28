@@ -3,9 +3,11 @@ print(' {:*^30}'. format(texto))
 
 print('Olá, que bom te-lo conosco!')
 distancia = float(input('Informe a distância da viagem em Kms : '))
-if distancia <= 200 :
+'''if distancia <= 200:
     distancia = distancia * 0.50
     print('Sua viagem custará : R${:.2f}' .format(distancia))
 else:
-    distancia = distancia * 0.45
-    print('Sua viagem custará : R${:.2f}'.format(distancia))
+    distancia = distancia * 0.45'''
+
+preco = distancia * 0.50 if distancia <= 200 else distancia * 0.45
+print('Sua viagem custará : R${:.2f}'.format(preco))
