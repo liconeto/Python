@@ -10,3 +10,9 @@ numero = int(input('Informe um número inteiro para ser convertido :'))
 opcao = int(input('Escolha a base de conversão :\n'
                   '\033[1;34m * 1 para binário \n * 2 para Octal \n * 3 para Hexadecimal \033[m\n'))
 
+if opcao == 1:
+    print('O número digitado foi {} ele convertido é : {}' .format(numero, bin(numero)))
+elif opcao == 2:
+    print('O número digitado foi {} ele convertido é : {}'.format(numero, oct(numero)))
+elif opcao == 3:
+    print('O número digitado foi {} ele convertido é : {}'.format(numero, hex(numero)))
