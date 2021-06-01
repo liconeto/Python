@@ -1,3 +1,8 @@
+emoji
+https://carpedm20.github.io/emoji/
+https://www.webfx.com/tools/emoji-cheat-sheet/
+https://emojiterra.com/pt/pontos-de-codigo/
+
 Colorindo o Python.
 Exemplo:
 Padrão ANSI
