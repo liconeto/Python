@@ -1,4 +1,4 @@
-texto = ' Desafio 041 '
+texto = ' Desafio 042 '
 print(' {:*^30}'. format(texto))
 
 limpa = '\033[m'
