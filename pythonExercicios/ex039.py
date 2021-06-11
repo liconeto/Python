@@ -9,12 +9,21 @@ cores = {'vermelho':'\033[31m', 'verde':'\033[32m', 'amarelo':'\033[33m',
 
 print('{}{} Alistamento {}militar {}curso em {}vídeo {}'. format(cores['verde'], emoji.emojize(":Brazil:"), cores['amarelo'], cores['verde'],
                                                             cores['amarelo'], limpa))
-idade = int(input('Informe o seu ano de nascimento :'))
-ano = date.today().year
-tempo = ano - idade
-if tempo <= 16:
-    print('{}{} Você tem apenas {} aguarde para se alistar no serviço militar!{}' .format(cores['amarelo'], emoji.emojize(' :warning:'),tempo, emoji.emojize(' :warning:')))
-elif tempo == 17 or tempo == 18:
-    print('{}{} Você tem {}. É hora de se alistar no serviço militar! {}' .format(cores['verde'], emoji.emojize(' :fireworks:'),tempo, emoji.emojize(' :fireworks:')))
+sexo = int(input('informe seu sexo \n'
+           '1 - Masculino \n'
+           '2 - Feminino'))
+print(sexo)
+if sexo != 1 and sexo != 2:
+    print('Opção invalida tente novamente')
+elif sexo   == 2:
+    print('O Alistamento militar não é obrigatório par o sexo Feminino!')
 else:
-    print('{} {} Você tem {} .Já passou da hora de se alistar! {}' .format(cores['vermelho'], emoji.emojize(":SOS_button:"), tempo, emoji.emojize(":SOS_button:")))
+    idade = int(input('Informe o seu ano de nascimento :'))
+    ano = date.today().year
+    tempo = ano - idade
+    if tempo <= 16:
+        print('{}{} Você tem apenas {} aguarde para se alistar no serviço militar!{}' .format(cores['amarelo'], emoji.emojize(' :warning:'),tempo, emoji.emojize(' :warning:')))
+    elif tempo == 17 or tempo == 18:
+        print('{}{} Você tem {}. É hora de se alistar no serviço militar! {}' .format(cores['verde'], emoji.emojize(' :fireworks:'),tempo, emoji.emojize(' :fireworks:')))
+    else:
+        print('{} {} Você tem {} .Já passou da hora de se alistar! {}' .format(cores['vermelho'], emoji.emojize(":SOS_button:"), tempo, emoji.emojize(":SOS_button:")))
