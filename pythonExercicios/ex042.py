@@ -26,4 +26,4 @@ if ab + cd > ef and cd + ef > ab and ab + ef > cd:
     else:
         print('É um triângulo {} Escaleno' .format(cores['roxo']))
 else:
-    print('Não é possivel formar o triângulos')
+    print('{}Não é possivel formar o triângulos' .format(cores['vermelho']))

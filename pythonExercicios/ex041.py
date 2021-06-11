@@ -26,6 +26,6 @@ elif idade >9 and idade <= 14:
     print('O atleta tem {}{:.0f}{} anos e é da {}categoria Infantil' .format(cores['vermelho'], idade, '\033[m', cores['amarelo']))
 elif idade >14 and idade <= 19:
     print('O Atleta tem {}{:.0f}{} anos e é da {}categoria Junior' .format(cores['azul'], idade, '\033[m', cores['roxo']))
-elif idade >= 20 and idade <= 20.9:
+elif idade >= 20 and idade <= 25:
     print('O Atleta tem {}{:.0f}{} anos e é da {}categoria Sênior' .format(cores['cinza'], idade, '\033[m', cores['vermelho']))
 else: print('O Atleta tem {}{:.0f}{} e é da categoria Master' .format(cores['vermelho'], idade, '\033[m', cores['ciano']))
