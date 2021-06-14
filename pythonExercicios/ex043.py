@@ -8,7 +8,7 @@ cores = {'vermelho':'\033[31m', 'verde':'\033[32m', 'amarelo':'\033[33m',
 print('{}Calculadora IMC Curso em Video{}' .format(cores['ciano'], limpa))
 peso = float(input('Informe o seu peso :'))
 altura = float(input('Informe sua altura:'))
-imc = peso / (altura * 2)
+imc = peso / (altura ** 2)
 
 if imc < 18.5:
     print('Você tem o abaixo do peso {}IMC ={:.2f}' .format(cores['ciano'], imc))

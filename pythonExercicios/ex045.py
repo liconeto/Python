@@ -1,5 +1,5 @@
 import random
-
+from time import sleep
 texto = ' Desafio 045 '
 print(' {:*^30}'. format(texto))
 
@@ -20,7 +20,11 @@ else:
     jogador = 'Tesoura'
 
 computador = random.choice(['Pedra', 'Papel', 'Tesoura'])
-
+print('JO')
+sleep(1)
+print('KEN')
+sleep(1)
+print('PO!!!')
 if jogador == computador:
     print('Houve um empate você escolheu :{} e o computador escolheu : {}' .format(jogador, computador))
 elif jogador == 'Pedra' and computador == 'Tesoura':

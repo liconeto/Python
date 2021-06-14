@@ -9,7 +9,7 @@ print('{} Condições de pagamento Curso em Vídeo {}' .format(cores['azul'], li
 print(' 1 -à vista dinheiro/cheque : 10% de desconto\n'
       ' 2 -à vista no cartão:5% de desconto\n'
       ' 3 -em até 2x no cartão preço normal\n'
-      ' 4 -3x no cartão: 20% de juros.')
+      ' 4 -3x ou mais no cartão: 20% de juros.')
 op = int(input('{}Escolha a opção de pagamento :' .format(cores['ciano'])))
 vprod = float(input('{}Informe o valor do produto :' .format(cores['verde'])))
 
