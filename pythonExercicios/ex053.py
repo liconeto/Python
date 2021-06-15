@@ -15,8 +15,8 @@ frase = input('Digite uma frase :').replace(' ', '')
 frase.split()
 rfrase = ''
 
-for c in range(len(frase), 0, -1):
-    rfrase = rfrase + frase[ c - len(frase) ]
+for c in range(len(frase), 0, -1 ):
+    rfrase = rfrase + frase[c - len(frase)]
     print(rfrase)
 
 if frase == rfrase:
