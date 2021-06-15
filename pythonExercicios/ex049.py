@@ -13,4 +13,4 @@ num = int(input('{}Informe o número para gerar a tabuada :{}' .format(cores['am
 print('O número escolhido foi {}' .format(num))
 for c in range(1,11):
     sleep(0.2)
-    print('|  {}{:2}{} X {}{:2}{}= {}{:2}{} |' . format(cores['verde'], c, limpa, cores['azul'], num, limpa, cores['vermelho'], c * num, limpa))
+    print('|  {}{:2}{} X {}{:2}{} = {}{:3}{} |' . format(cores['verde'], c, limpa, cores['azul'], num, limpa, cores['vermelho'], c * num, limpa))

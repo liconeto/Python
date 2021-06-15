@@ -9,6 +9,9 @@ cores = {'vermelho':'\033[31m', 'verde':'\033[32m', 'amarelo':'\033[33m',
 
 print('{}Contador par Curso em Vídeo {}{}' .format(cores['roxo'], emojize(":warning:"), limpa))
 
-for c in range (0,51):
+for c in range(2, 51, 2):
+    print(c, end=' ')
+
+for c in range (0, 51):
     if c % 2 == 0:
-        print('é par :{}{:2}{}' .format(cores['azul'], c, limpa))
+        print(', {}{:2}{}' .format(cores['azul'], c, limpa ))

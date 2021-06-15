@@ -20,9 +20,12 @@ for c in range(0, 7):
     idade = int(input('Informe o ano da nascimento para verificação :'))
     if (ano - idade )>= 21:
         maior = maior + 1
-        print((ano - idade ))
+        #print((ano - idade ))
     else:
         menor = menor + 1
-        print(ano - idade)
-print('''Os maiores de 21 são :{}
-e os menores são :{}''' .format(maior, menor))
+        #print(ano - idade)
+print('Calculando')
+sleep(1)
+print('''
+Os maiores de 21 são : {}{}{}
+e os menores são : {}{}{}''' .format(cores['azul'], maior, limpa, cores['vermelho'], menor, limpa))

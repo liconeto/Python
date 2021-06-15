@@ -16,7 +16,8 @@ frase.split()
 rfrase = ''
 
 for c in range(len(frase), 0, -1 ):
-    rfrase = rfrase + frase[c - len(frase)]
+    print(len(frase))
+    rfrase = rfrase + frase[ c - len(frase) ]
     print(rfrase)
 
 if frase == rfrase:

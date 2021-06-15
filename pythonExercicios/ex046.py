@@ -10,7 +10,7 @@ cores = {'vermelho':'\033[31m', 'verde':'\033[32m', 'amarelo':'\033[33m',
 
 print('{}Contador Curso em Vídeo' .format(cores['ciano']))
 
-for c in range(10, 0, -1):
+for c in range(10, -1, -1):
     print(c)
     sleep(1)
-print(emojize(" {}:fireworks:", use_aliases=True) .format(cores['vermelho']))
+print(emojize(" {}:fireworks::fireworks::fireworks::fireworks::fireworks:", use_aliases=True) .format(cores['vermelho']))
