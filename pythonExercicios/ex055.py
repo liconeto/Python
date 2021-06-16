@@ -16,14 +16,19 @@ maior =0
 menor =10000
 print('Informe o peso de 5 pessoas para verificar o peso de 5 pessoas')
 
-for c in range(0, 5):
+for c in range(1, 6):
     print('Maior = {} | Menor = {}' .format(maior, menor))
-    peso = int(input('Informe o peso para verificação :'))
-    if peso > maior:
-        maior = peso
+    peso = int(input('Informe o peso da {}ª pessoa :' . format(c)))
+    if c ==1:
+        maior= peso
+        menor= peso
+    else:
+        if peso > maior:
+            maior = peso
+        if peso < menor:
+            menor = peso
+            
 
-    elif peso < menor:
-        menor = peso
 print('''
 O maior peso é = {}{}{}
 O menor peso é ={}{}{}''' .format(cores['vermelho'], maior, limpa, cores['ciano'], menor, limpa))
