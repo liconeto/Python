@@ -16,8 +16,8 @@ ano = date.today().year
 maior =0
 menor =0
 
-for c in range(0, 7):
-    idade = int(input('Informe o ano da nascimento para verificação :'))
+for c in range(1, 8):
+    idade = int(input('Informe o {}º ano da nascimento para verificação :' .format(c)))
     if (ano - idade )>= 21:
         maior = maior + 1
         #print((ano - idade ))

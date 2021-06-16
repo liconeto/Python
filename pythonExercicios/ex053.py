@@ -11,19 +11,19 @@ cores = {'vermelho':'\033[31m', 'verde':'\033[32m', 'amarelo':'\033[33m',
 texto2 = ' Verificador de palindromo '
 print('{}{:=^40}{}' .format(cores['ciano'], texto2, limpa))
 
-frase = input('Digite uma frase :').replace(' ', '')
-frase.split()
+frase = str(input('Digite uma frase :')).strip().upper()
+palavras = frase.split()
+junto = ''.join(palavras)
+
 rfrase = ''
+inverso =junto[::-1]
+for letra in range(len(junto) - 1, -1, -1):
+    rfrase += junto[letra]
 
-for c in range(len(frase), 0, -1 ):
-    print(len(frase))
-    rfrase = rfrase + frase[ c - len(frase) ]
-    print(rfrase)
-
-if frase == rfrase:
+if junto == rfrase:
     print('é um palindromo')
 else:
     print('Não é um palindromo')
 
-print(frase)
-print(rfrase)
+print('\033[35m'+junto, '\033[36m'+rfrase)
+print('Inverso {}{}' .format(cores['vermelho'], inverso))

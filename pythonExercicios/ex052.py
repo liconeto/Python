@@ -10,6 +10,14 @@ print('{}{:*^50}{}' .format(cores['ciano'], texto2, limpa))
 
 n = int(input('{}Informe um número inteiro :{}' .format(cores['azul'], limpa)))
 conta = 0
+
+for c in range(1, n + 1):
+    if n % c ==0:
+        print('\033[33m', end=' ')
+    else:
+        print('\033[31m', end=' ')
+    print('{}' .format(c), end=' ')
+
 for c in range(n, 0, -1):
     if n % c == 0:
         conta = conta+1
