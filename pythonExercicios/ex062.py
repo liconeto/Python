@@ -13,6 +13,7 @@ cores = {'vermelho':'\033[31m', 'verde':'\033[32m', 'amarelo':'\033[33m',
 t = int(input('Digite o termo da PA :'))
 r = int(input('Digite a razão da PA :'))
 l = int(input('Digite quantos termos :'))
+cont = l
 while l != 0:
     print(t, end='\033[33m -> \033[m')
     sleep(0.3)
@@ -20,4 +21,6 @@ while l != 0:
     l -= 1
     if l == 0:
         l= int(input('\033[35m Quer mostrar mais quantos termos ?:\033[m'))
-print('`\033[31mFIM! {}' .format(emojize(':zap:', use_aliases=True)))
+        cont += l
+print('\033[36mTermos calculados: {}\033[m' .format(cont))
+print('\033[31mFIM! {}\033[m' .format(emojize(':zap:', use_aliases=True)))
