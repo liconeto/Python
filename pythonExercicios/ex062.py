@@ -15,6 +15,7 @@ r = int(input('Digite a razão da PA :'))
 l = int(input('Digite quantos termos :'))
 while l != 0:
     print(t, end='\033[33m -> \033[m')
+    sleep(0.3)
     t += r
     l -= 1
     if l == 0:
