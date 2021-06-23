@@ -21,6 +21,10 @@ while computador != usuario:
         print('\033[1;33m.', end='\033[m')
         sleep(0.4)
     print('')
+    if computador > usuario:
+        print('\033[33mMais...\033[m')
+    elif computador < usuario:
+        print('\033[33mMenos...\033[m')
     palpites += 1
 print('\033[1;36m PARABÉNS VOCE ACERTOU!!!\033[m')
 print('{} Computador escolheu: {}'.format(emojize(":thumbsup:", use_aliases=True),computador))

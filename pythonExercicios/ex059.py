@@ -20,7 +20,8 @@ while opcao != 5:
  |   \033[32m[2] Multiplicar \033[m      |
  |   \033[33m[3] Maior \033[m            |
  |   \033[34m[4] Novos números \033[m    |
- |   \033[35m[5] Sair do Programa!\033[m |'''))
+ |   \033[35m[5] Sair do Programa!\033[m |
+  O que você deseja fazer ? :'''))
 
     if opcao == 1:
         print('A soma de {} e {} = {}' .format(n1, n2, n1+n2))
