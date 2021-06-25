@@ -17,7 +17,7 @@ c = 0
 s = 0
 
 while n != 999:
-    n = int(input('\033[31m Digite um número inteiro :\033[m'))
+    n = int(input('\033[31m Digite um número inteiro [999 para parar]:\033[m'))
     if n != 999:
         c += 1
         s = s + n
