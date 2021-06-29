@@ -25,13 +25,10 @@ while True:
             print('Valor inválido, digite um número inteiro!')
         else:
             break
-    while True:
-        try :
-            sexo = str(input('Digite o sexo [ \033[31mF\033[m | \033[34mM\033[m ]'))
-        except:
-            print('Valor inválido, escolha [ F | M ]')
-        else:
-            break
+    sexo = str(input('Digite o sexo [ \033[31mF\033[m | \033[34mM\033[m ]')).strip()[0]
+    while sexo not in ['f', 'F', 'm', 'M']:
+            sexo = str(input('Digite o sexo [ \033[31mF\033[m | \033[34mM\033[m ]')).strip()[0]
+
     if idade >= 18:
         maiores +=1
 
@@ -41,7 +38,9 @@ while True:
     if sexo == 'f' and idade < 20 or sexo == 'F' and idade < 20:
         cm += 1
 
-    continua = str(input('Quer continuar ? : [ S | N ]'))
+    continua = str(input('Quer continuar ? : [ S | N ]')).strip()[0]
+    while continua not in ['n', 'N', 's', 'S']:
+        continua = str(input('Quer continuar ? : [ S | N ]')).strip()[0]
     if continua == 'n' or continua == 'N':
         break
 print(f'''  .: Foram cadastrados :.
