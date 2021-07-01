@@ -14,24 +14,29 @@ cores = {'vermelho':'\033[31m', 'verde':'\033[32m', 'amarelo':'\033[33m',
 
 texto2 =' \033[34m Par\033[m ou \033[32mImpar\033[m '
 print(f'{texto2:*^50}')
+
 v=0
 while True:
-    computador = randint(0, 9999)
-    try:
-        jogador = int(input('Digite um número inteiro : '))
-    except:
-        print('Valor inválido, digite um número inteiro')
-    else:
-        escolhaj = str(input('Escolha Par ou Impar = [ P | I ] :')).strip()[0]
-        soma = computador + jogador
-        if soma % 2 == 0:
-            parImpar = 'p'
+    computador = randint(0, 10)
+    jogador = int(input('Digite um número inteiro : '))
+    total = jogador + computador
+    tipo = ' '
+    while tipo not in 'PI':
+        tipo = str(input('Escolha Par ou Impar = [ P | I ] :')).strip()[0].upper()
+    if tipo == 'P':
+        if total % 2 == 0:
+            print('Você ganhou')
+            v+=1
         else:
-            parImpar = 'i'
-        if escolhaj == 'p' and parImpar == 'p':
-            v+= 1
-        else:
+            print('Você perdeu!')
             break
-
-print(f'Computador :{computador} e jogador {jogador} = {soma} e é {parImpar}')
+    elif tipo == 'I':
+        if total % 2 == 1:
+            print('Você Venceu!')
+            v+=1
+        else:
+            print('Você perdeu!')
+            break
+    print(f'Computador :{computador} e jogador {jogador} = {total} ')
+    print('DEU PAR' if total % 2 == 0 else 'DEU IMPAR')
 print(f'Vitórias sonsecutivas : {v}')
