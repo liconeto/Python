@@ -27,3 +27,4 @@ while True:
             while c < 10:
                 c += 1
                 print(f'''| {n:3} x {c:3} = \033[34m{n*c:4}\033[m |''')
+print('Programa tabuada encerrado com sucesso volte sempre ')
