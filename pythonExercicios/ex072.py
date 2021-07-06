@@ -16,13 +16,25 @@ texto2 =' \033[35m Tupla extenso \033[m '
 print(f'{texto2:*^50}')
 tupla = ('zero', 'um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete',
       'oito', 'nove', 'dez', 'onze', 'doze', 'treze', 'quatorze',
-      'quinze', 'dezesseis', 'dezesete', 'dezoito', 'dezenove', 'vinte')
+      'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove', 'vinte')
 n=0
+continua ='s'
 while True:
-    try:
-        n = int(input('Digite um número entre 0 e 20  :'))
-    except:
-        print('Valor inválido, digite um número entre 0 e 20 :')
 
-    if 0 <= n and n <= 20:
-        print(f'{tupla[n]}')
+    while True:
+        try:
+            n = int(input('Digite um número entre 0 e 20  :'))
+        except:
+            print('Valor inválido, digite um número entre 0 e 20 :')
+
+        if 0 <= n and n <= 20:
+            break
+        print('Tente novamente!')
+
+    print(f'Você digitou, {tupla[n]}')
+
+    continua = str(input('Deseja contnuar ? [S/N]')).strip().upper()[0]
+    while continua not in ['S', 'N']:
+        continua = str(input('Deseja contnuar ? [S/N]')).strip().upper()[0]
+    if continua =='N':
+        break
