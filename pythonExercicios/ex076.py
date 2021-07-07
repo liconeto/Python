@@ -19,4 +19,4 @@ produtos = ('Caneta', 1.99, 'Celular', 1798.99, 'Monitor', 799.89,
             'Notebook', 3569.47, 'Mochila', 179.25)
 
 for c in range(0, len(produtos), 2):
-    print(f'| \033[34m{produtos[c] :-<40}R$\033[1;31m{produtos[c+1]:8}\033[m |')
+    print(f'| \033[34m{produtos[c] :-<40}R$\033[1;31m{produtos[c+1]:8.2f}\033[m |')

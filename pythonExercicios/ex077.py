@@ -21,6 +21,8 @@ cont =0
 
 while cont != len(palavras):
     vogais =''
-    print(f'A palavra :\033[33m{palavras[cont]}\033[m tem essas vogais :', end='')
-    for pal
+    print(f'\nA palavra :\033[33m{palavras[cont]}\033[m tem essas vogais :', end='')
+    for letra in palavras[cont]:
+        if letra.lower() in 'aeiou':
+            print(letra, end=' ')
     cont += 1
