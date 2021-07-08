@@ -21,7 +21,7 @@ pmaior = []
 for cont in range(0, 5):
     while True:
         try:
-            valores.append(int(input('Digite um valor: ')))
+            valores.append(int(input(f'Digite um valor, na posição {cont+1} : ')))
         except:
             print('Valor inválido, digite um número inteiro!')
         else:

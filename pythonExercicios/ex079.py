@@ -24,8 +24,14 @@ while continua == 'S':
             print('Valor inválido, digite um número inteiro!')
         else:
             break
+
+    if num in unicos:
+        print('Número duplicado, não adicionado!')
+
     if num not in unicos:
         unicos.append(num)
+        print('Número adicionado com sucesso!')
+
     continua = str(input('Deseja continuar ? [S/N] :')).strip().upper()[0]
     while continua not in 'sSnN':
             continua = str(input('Deseja continuar ? [S/N] :')).strip().upper()[0]
