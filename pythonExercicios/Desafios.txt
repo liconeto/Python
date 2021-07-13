@@ -1,27 +1,28 @@
-078 Faça um programa que leia 5 valores numerico e guarde-os em uma lista
-No final, mostre qual foi o maior e o menor valor digitado e as suas respectivas
-posições na lista
+084 Faça um programa que leia nome e peso de várias pessoas, guardando tudo
+em uma lista. No final, mostre:
 
-079 Crie um programa que o usuário possa digitar vários valores numéricos e
-cadastre-os em uma lista. Caso o número já exista lá dentro, ele não será adicionado
-No final, serão axibidos todos os valores únicos digitados, em ordem crescente.
+A) Quantas pessoas foram cadastradas.
+B) Uma listagem com a pessoas mais pesadas 100
+C) Uma listagem com as pessoas mais leves 70
 
-080 Crie um programa onde o usuário possa digitar cinco valores númericos e
-cadastre-os em uma lista, já ma posição correta de inserção (sem usar o sort())
-No final. mostre a lista ordenada na tela
+085  Crie um programa onde o usuario possa digitar sete valores númericos
+e cadastre-os em uma lista única que mantenha separados os valores pares e
+ impares. No final, mostre os valores pares e impares em ordem crescente.
+ 
+086 Crie um programa que crie uma matriz de dimensão 3x3 e preencha  com
+valores lidos pelo teclado.
+No final, mostre a matriz na tela, com a formatação correta.
 
-081 Crie um programa que vai ler varios numeros e colocar em um lista.
-Depois disso, mostre:
+087 Aprimore o desafio anterior mostrando no final
+A) A soma de todos os valores pares digitados.
+B) A soma de todos valores da terceira coluna
+C) O maoir valor da segunda linha.
 
-A) Quantos numeros foram digitados.
-B) A lista de valores em oredm decrescente.
-C) Se o valor 5 foi digitado e está ou nao na lista.
+088 Faça um program que ajude um jogador da mega sena a criar palpites. o
+programa vai perguntar quantos jogos serão gerados e vai sortear 6 numeros
+entre 1 e 60 para cada jogo, cadastrado tudo em uma lista composta.
 
-082 Crie um programa que vai ler varios numeros e colocar em uma lista.
-Depois disso, crie duas listas extras que vão contaer apenas os valores
-pares e os valores impares digitados, respectivamente.
-Ao final, mostre o conteudo das três listas geradas.
-
-083 Crie um programa onde o usuário digite uma expressão qualquer que use
-parenteses. Seu aplicativo deverá analisar se a expressão passada está com os
-parenteses abertos e fechados na ordem correta.
+089 Crie um programa que leia o nome e duas notas de varios alunos e guarde
+tudo em um lista composta. No final, mostre um boletim contendo a média de
+ cada um e permita que o usuário possa mostrar as notas de cada aluno
+ individualemnte. 

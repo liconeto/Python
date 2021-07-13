@@ -16,18 +16,19 @@ print(f'{texto2:*^50}')
 
 expressao = []
 parenteses = []
-colchetes = []
-chaves = []
+
 expressao= str(input('Digite a expressão :')).strip()
 for c in expressao:
-    print(f'{c}')
-    if '(' == c or c == ')':
+    #print(f'{c}')
+    if '(' == c:
         parenteses.append(c)
-    #if '[' == c or c == ']':
-    #    colchetes.append(c)
-    #if '{' == c or c == '}':
-    #    chaves.append(c)
-print(f'A expressão digitada foi : {expressao}')
-print(f'{parenteses}, {len(parenteses)}')
-print(f'{colchetes}')
-print(f'{chaves}')
+    elif  c == ')':
+        if len(parenteses) > 0:
+            parenteses.pop()
+        else:
+            parenteses.append(')')
+            break
+if len(parenteses) == 0:
+    print('Sua expressão está válida!')
+else:
+    print('Sua expressão está errada!')
