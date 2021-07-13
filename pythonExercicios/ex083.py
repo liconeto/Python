@@ -11,7 +11,23 @@ limpa = '\033[m'
 cores = {'vermelho':'\033[31m', 'verde':'\033[32m', 'amarelo':'\033[33m',
          'azul':'\033[34m', 'roxo':'\033[35m', 'ciano':'\033[36m', 'cinza':'\033[37m'}
 
-texto2 =' \033[32m Validardor de expressões \033[m '
+texto2 =' \033[32m Validador de expressões \033[m'
 print(f'{texto2:*^50}')
 
 expressao = []
+parenteses = []
+colchetes = []
+chaves = []
+expressao= str(input('Digite a expressão :')).strip()
+for c in expressao:
+    print(f'{c}')
+    if '(' == c or c == ')':
+        parenteses.append(c)
+    #if '[' == c or c == ']':
+    #    colchetes.append(c)
+    #if '{' == c or c == '}':
+    #    chaves.append(c)
+print(f'A expressão digitada foi : {expressao}')
+print(f'{parenteses}, {len(parenteses)}')
+print(f'{colchetes}')
+print(f'{chaves}')

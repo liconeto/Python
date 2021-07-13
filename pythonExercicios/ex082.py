@@ -28,11 +28,13 @@ while continua != 'N':
             break
     lista.append(valor)
     if valor % 2 == 0:
+        print('Número par adicionado!')
         par.append(valor)
     else:
+        print('Número impar adicionado!')
         impar.append(valor)
     continua = str(input('Deseja continuar? [S/N]')).strip().upper()[0]
 
-print(f'Os valores digitados foram \033[1;37m{sorted(lista)}\033[m')
+print(f'Os valores digitados foram \033[1;33m{sorted(lista)}\033[m')
 print(f'Os números pares são : \033[34m{sorted(par)}\033[m')
 print(f'Os números impares são : \033[31m{sorted(impar)}\033[m')
