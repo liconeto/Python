@@ -29,6 +29,15 @@ while True:
 print(f'{pessoas}')
 print(f'A lista tem \033[31m{len(pessoas)}\033[m pessoas cadastradas.')
 print(f'{"-=" * 30}')
-for p in len(pessoas):
-    if pessoas[] > 100:
-
+for p in pessoas:
+    print(p)
+    if p[1] >= 100:
+        pesada.append(p[:])
+    elif p[1] <= 70:
+        leve.append(p[:])
+print(f'-=' * 30)
+print(f'As pessoas mais pesadas são')
+print(f'{pesada}')
+print(f'-=' * 30)
+print(f'As pessoas mais leves são')
+print(f'{leve}')
