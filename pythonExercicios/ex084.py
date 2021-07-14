@@ -16,6 +16,8 @@ print(f'{texto2:*^50}')
 
 pessoas = list()
 pessoa = list()
+pesada = list()
+leve = []
 while True:
     pessoa.append(str(input('Digite o nome :')))
     pessoa.append(int(input('Digite o peso :')))
@@ -24,5 +26,9 @@ while True:
     continua = str(input('Deseja continuar? [S/N]')).strip()[0]
     if continua in 'nN':
         break
+print(f'{pessoas}')
+print(f'A lista tem \033[31m{len(pessoas)}\033[m pessoas cadastradas.')
+print(f'{"-=" * 30}')
+for p in len(pessoas):
+    if pessoas[] > 100:
 
-print(f'{pessoas.count(0)}')
