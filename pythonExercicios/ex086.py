@@ -15,7 +15,6 @@ texto2 =' \033[35m Matriz 3x3 \033[m'
 print(f'{texto2:*^50}')
 
 matriz =[[],[],[]]
-
 for c in range(1, 10):
     while True:
         try:
@@ -30,7 +29,16 @@ for c in range(1, 10):
         matriz[1].append(num)
     else:
         matriz[2].append(num)
-
 print(matriz)
 for i in matriz:
     print(f'\033[1;31m{i}\033[m')
+
+matriz2 = [[0, 0, 0],[0, 0, 0],[0, 0, 0]]
+for l in range(0, 3):
+    for c in range(0, 3):
+        matriz2[l][c] = int(input(f'Digite um valor:[{l},{c}] '))
+print('-+' * 30)
+for l in range(0, 3):
+    for c in range(0, 3):
+        print(f'[{matriz2[l][c]:^5}]', end='')
+    print()
