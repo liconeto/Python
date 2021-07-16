@@ -1,4 +1,3 @@
-import random
 from builtins import print
 from datetime import date
 from emoji import emojize
@@ -15,16 +14,29 @@ cores = {'vermelho':'\033[31m', 'verde':'\033[32m', 'amarelo':'\033[33m',
 texto2 =' \033[36m Palpite Mega Sena\033[m '
 print(f'{texto2:*^50}')
 
-jogos = [[],[],[],[],[],[]]
-g = 0
-qtde = int(input('Quantos jogos deseja ? :'))
-while qtde != g:
-    for c in range(1,7):
-        #print(qtde)
-        jogos[g].append(randint(1, 60))
-    g += 1
-    print(f'{jogos}')
+lista = list()
+jogos = list()
+qtde = 0
+while True:
+    try:
+        qtde = int(input('Quantos jogos você deseja que eu sorteie? : '))
+    except:
+        print('Valor inválido, digite um valor inteiro!')
+    else:
+        break
+print('\033[31m*-\033[m' * 30)
+while qtde != 0:
+    for c in range(1, 7):
+        num = randint(1, 60)
+        if num not in lista:
+            lista.append(num)
+    qtde -= 1
+    jogos.append(sorted(lista[:]))
+    lista.clear()
+print(f'Sorteando jogos!')
+for c in jogos:
     sleep(1)
-
-print(f'{qtde}')
-print(f'{jogos}')
+    print(c)
+print('\033[31m-*\033[m' * 30)
+sleep(1)
+print(f'\033[32m        *** BOA SORTE! ***')
