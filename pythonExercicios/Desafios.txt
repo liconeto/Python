@@ -1,28 +1,34 @@
-084 Faça um programa que leia nome e peso de várias pessoas, guardando tudo
-em uma lista. No final, mostre:
+090 Faça um programa que leia nome e média de um aluno, guardando também a
+situação em um dicionário. No final mostre o conteúdo da estrutura na tela
+compara se média >7 aprovado
 
+091 Crie um programa onde 4 jogadores joguem um dado e tenham resultados
+aleatórios. Guarde esses resultados em um dicionário. No final, coloque
+esse dicionário em ordem, sabendo que o vencedor tirou o maior número
+no dado.
+randint, sleep, ordenação dicionário
+
+092 Crie um programa que leia nome, ano de mascimento e carteira de trabalho
+e cadastre-os (com idade) em um dicionário se por acaso a CTPS for diferente
+de ZERO. o dicionário receberá também o ano de contração e o salário.
+Calcule e acrescente, além da idade, com quantos a pessoa vai se aposentar.
+35 anos 
+
+093 Crie um programa que gerencie o aproveitamento de um jogador de 
+futebol. O programa vai ler o nome od jogador e quantas partidas ele jogou 
+Depois vai ler a quantidade de gols feitos em cada partida. No final, tudo
+isso será guardado em um dicionário. Incluindo o total de gols feitos
+durante o campeonato 
+Aproveitamento lista, tabela com todos os dados.
+
+094 Crie um programa que leia nome, sexo e idade de várias pessoas
+guardando os dados em um dicionarioe todos os dicionarios em uma lista
+No final mostre:
 A) Quantas pessoas foram cadastradas.
-B) Uma listagem com a pessoas mais pesadas 100
-C) Uma listagem com as pessoas mais leves 70
+B) A média de idade do grupo.
+C) uma lista com todas as mulheres.
+D) Uma listacom todos as pessoas com idade acima da média.
 
-085  Crie um programa onde o usuario possa digitar sete valores númericos
-e cadastre-os em uma lista única que mantenha separados os valores pares e
- impares. No final, mostre os valores pares e impares em ordem crescente.
- 
-086 Crie um programa que crie uma matriz de dimensão 3x3 e preencha  com
-valores lidos pelo teclado.
-No final, mostre a matriz na tela, com a formatação correta.
-
-087 Aprimore o desafio anterior mostrando no final
-A) A soma de todos os valores pares digitados.
-B) A soma de todos valores da terceira coluna
-C) O maoir valor da segunda linha.
-
-088 Faça um program que ajude um jogador da mega sena a criar palpites. o
-programa vai perguntar quantos jogos serão gerados e vai sortear 6 numeros
-entre 1 e 60 para cada jogo, cadastrado tudo em uma lista composta.
-
-089 Crie um programa que leia o nome e duas notas de varios alunos e guarde
-tudo em um lista composta. No final, mostre um boletim contendo a média de
- cada um e permita que o usuário possa mostrar as notas de cada aluno
- individualemnte. 
+095 Aprimore o desafio 93 para que ele funcione com vários jogadores.
+Incluindo um sistema de visualização de detalhes do aproveitamento de
+ cada jogador.
