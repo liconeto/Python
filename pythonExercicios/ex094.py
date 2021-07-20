@@ -15,8 +15,11 @@ cores = {'vermelho':'\033[31m', 'verde':'\033[32m', 'amarelo':'\033[33m',
 texto2 =' \033[34m Pessoas \033[m '
 
 pessoas = list()
+mulheres = list()
+amedia = list()
 pessoa = {}
 sexo = ' '
+qtde = mediaidade = sidade = 0
 while True:
     while True:
         try:
@@ -44,5 +47,16 @@ while True:
     continua = str(input('Deseja continuar [S/N]: ')).strip().upper()[0]
     if continua in 'nN':
         break
-print(f'{pessoa}')
+for i, v in enumerate(pessoas):
+    print(f'O indice {i} e o valor {v}' )
+    sidade += v['idade']
+    if v['sexo'] in 'fF':
+        mulheres.append(pessoas[i:v])
+    qtde += 1
+mediaidade = sidade / qtde
+print('-=' * 30)
 print(f'{pessoas}')
+print(f'=-' * 30)
+print(f'Quantidade de pessoas {qtde} cadastradas!')
+print(f'A média de idade do grupo é {mediaidade:2f} ')
+print(f'A lista da mulheres é {mulheres}')
