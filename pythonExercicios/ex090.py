@@ -18,7 +18,7 @@ aluno = dict()
 
 while True:
     try:
-        nome = str(input('Nome do Aluno; '))
+        nome = str(input('Nome do Aluno: '))
     except:
         print('Informe o nome do aluno! ')
     else:
@@ -35,9 +35,11 @@ aluno['nome'] = nome
 aluno['media'] = media
 if media >= 7:
     aluno['situacao'] = '\033[34mAPROVADO\033[m'
+elif media < 7 and media >= 5:
+    aluno['situacao'] = '\033[37mRECUPERAÇÂO\033[m'
 else:
     aluno['situacao'] = '\033[31mREPROVADO\033[m'
 print(f'{aluno}')
-print('*+' * 30)
-print(f'| \033[32m{aluno["nome"]:<20}\033[m, está :{aluno["situacao"]:^14} |')
-print('+*' * 30)
+print('*+' * 35)
+print(f'| Nome:\033[32m{aluno["nome"]:<20}\033[m, média é {aluno["media"]} Situação: {aluno["situacao"]:^14} |')
+print('+*' * 35)

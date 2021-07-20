@@ -3,6 +3,7 @@ from datetime import date
 from emoji import emojize
 from time import sleep
 from random import randint
+from operator import itemgetter
 
 texto = ' \033[1;36m Desafio 091 \033[m '
 print('{:*^50}'. format(texto))
@@ -13,13 +14,20 @@ cores = {'vermelho':'\033[31m', 'verde':'\033[32m', 'amarelo':'\033[33m',
 
 texto2 =' \033[34m Jogadores \033[m '
 print(f'{texto2:*^50}')
-jogador= dict()
-jogadores = dict()
+jogo= {
+    'jogador1': randint(1, 6),
+    'jogador2': randint(1, 6),
+    'jogador3': randint(1, 6),
+    'jogadot4': randint(1, 6)}
+ranking = list()
 
-for k in range(1, 5):
-    jogador['jogador'] = k
-    v = randint(1, 6)
-    jogador['dado'] = v
-    print(jogador)
-    jogadores['jogador'] =jogador.copy()
-print(f'{jogadores.items()}')
+print('-=' * 30)
+print('Valores Sorteados: ')
+for k, v in jogo.items():
+    print(f'{k} tirou {v} no dado.')
+    sleep(1)
+ranking = sorted(jogo.items(), key=itemgetter(1), reverse=True)
+
+for k, v in enumerate(ranking):
+    print(f'{k}º Lugar: {v[0]} com {v[1]}.')
+    sleep(1)
