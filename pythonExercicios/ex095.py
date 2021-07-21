@@ -22,22 +22,50 @@ while True:
     nome = str(input('Nome do jogador: '))
     partidas = int(input(f'Quantas partidas {nome} jogou? '))
     for i in range(1, partidas+1):
-        gols.append(int(input(f'  * Quantos gols na partida {i}: ')))
+        while True:
+            try:
+                gols.append(int(input(f'  * Quantos gols na partida {i}: ')))
+            except:
+                print('Valor inválido, digite um número inteiro!')
+            else:
+                break
     for i, c in enumerate(gols):
         total += c
     print('+*' * 30)
     jogador= {'nome': nome, 'gols': gols[:], 'total': total}
-    print(f'{jogador}')
-    print('*+' * 30)
-    for k, v in jogador.items():
-        print(f'O campo {k} tem o valor {v}')
-    print('+*' * 30)
-    print(f' O Jogador {jogador["nome"]} jogou {partidas} partidas.')
-    for k, v in jogador.items():
-        if k == 'gols':
-            for i, c in enumerate(v):
-                sleep(0.5)
-                print(f'   => Na patida \033[32m{i+1}\033[m, fez \033[31m{c}\033[m gols')
+    jogadores.append(jogador.copy())
+    jogador.clear()
+    gols.clear()
+    total =0
+    while True:
+        resp = str(input('Quer continuar? [S/N] ')).upper()[0]
+        if resp in 'SN':
+            break
+    if resp == 'N':
+        break
 
-    print(f' Um total de \033[31m{jogador["total"]}\033[m gols')
-    print('+*' * 30)
+print(f'{jogadores}')
+print('*+' * 30)
+print('Cod Nome        Gols          Total')
+print('-' * 40)
+for k, v in enumerate(jogadores):
+    print(f'\033[1;31m{k:>3}\033[m {v["nome"]:<12}{v["gols"]}{v["total"]:>7}')
+print('-' * 40)
+
+while True:
+    while True:
+        try:
+            detalhe = int(input('Quer mostrar os dados de qual jogador? (\033[1;31m999\033[m para parar) '))
+        except:
+            print('Valor inválido!')
+        else:
+            break
+    if detalhe == 999:
+        break
+    for i, v in enumerate(jogadores):
+        if detalhe == i:
+            print(f'Levantamento do jogador \033[1;31m{v["nome"]}\033[m: ')
+            for i,c in enumerate(v["gols"]):
+                print(f'   No jogo {i+1} fez \033[33m{c}\033[m gols.')
+print('+*' * 30)
+print('<<< \033[35mVolte sempre !\033[m >>>')

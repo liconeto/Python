@@ -29,12 +29,10 @@ while True:
         else:
             break
     while True:
-        try:
-            sexo = str(input('Informe o sexo [M/F]: ')).strip()[0]
-        except:
+            sexo = str(input('Informe o sexo [M/F]: ')).upper()[0]
+            if sexo in 'MF':
+                break
             print('informe o sexo [M/F]')
-        else:
-            break
     while True:
         try:
             idade= int(input(f'Infome sua idade {nome} : '))
@@ -48,7 +46,7 @@ while True:
     if continua in 'nN':
         break
 for i, v in enumerate(pessoas):
-    print(f'O indice {i} e o valor {v}' )
+    #print(f'O indice {i} e o valor {v}' )
     sidade += v['idade']
     if v['sexo'] in 'fF':
         mulheres.append(v)
@@ -57,10 +55,12 @@ mediaidade = sidade / qtde
 for i, v in enumerate(pessoas):
     if v['idade'] > mediaidade:
         amedia.append(v)
-print('-=' * 30)
-print(f'{pessoas}')
 print(f'=-' * 30)
 print(f'Quantidade de pessoas {qtde} cadastradas!')
 print(f'A média de idade do grupo é {mediaidade:.2f} ')
-print(f'A lista da mulheres é {mulheres}')
+print(f'A lista da mulheres é :', end='')
+for d in mulheres:
+    print(f'{d["nome"]}', end=', ')
+print('')
 print(f'As pessoas com idade acima da média são : {amedia}')
+print("ENCERRANDO...")
