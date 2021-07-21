@@ -27,7 +27,7 @@ No final mostre:
 A) Quantas pessoas foram cadastradas.
 B) A média de idade do grupo.
 C) uma lista com todas as mulheres.
-D) Uma listacom todos as pessoas com idade acima da média.
+D) Uma lista com todos as pessoas com idade acima da média.
 
 095 Aprimore o desafio 93 para que ele funcione com vários jogadores.
 Incluindo um sistema de visualização de detalhes do aproveitamento de
