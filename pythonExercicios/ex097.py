@@ -12,7 +12,7 @@ limpa = '\033[m'
 cores = {'vermelho':'\033[31m', 'verde':'\033[32m', 'amarelo':'\033[33m',
          'azul':'\033[34m', 'roxo':'\033[35m', 'ciano':'\033[36m', 'cinza':'\033[37m'}
 
-texto2 =' \033[35m Função texto \033[m '
+texto2 =' \033[33m Função escreva \033[m '
 print(f'{texto2:*^50}')
 
 def escreva(txt):
@@ -26,3 +26,5 @@ def escreva(txt):
 escreva('Gustavo')
 escreva('Cev')
 escreva('Olho no céu!')
+escreva('Curso em Vídeo')
+escreva('Python é Da Hora ')
