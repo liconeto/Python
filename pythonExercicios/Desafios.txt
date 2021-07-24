@@ -1,34 +1,30 @@
-090 Faça um programa que leia nome e média de um aluno, guardando também a
-situação em um dicionário. No final mostre o conteúdo da estrutura na tela
-compara se média >7 aprovado | se média entre 5 e 6.9 Recuperação
+096 Faça um programa que tenha uma função chamada area(), que receba as dimensões
+de um terreno retangular (largura e comprimento) e mostre a área do terreno
 
-091 Crie um programa onde 4 jogadores joguem um dado e tenham resultados
-aleatórios. Guarde esses resultados em um dicionário. No final, coloque
-esse dicionário em ordem, sabendo que o vencedor tirou o maior número
-no dado.
-randint, sleep, ordenação dicionário
+097 Faça um progrma que tenha uma função chamada escreva(), que receba um texto
+qualquer como parâmetro e mostre uma mensagem com tamanho adaptavel.
 
-092 Crie um programa que leia nome, ano de mascimento e carteira de trabalho
-e cadastre-os (com idade) em um dicionário se por acaso a CTPS for diferente
-de ZERO. o dicionário receberá também o ano de contração e o salário.
-Calcule e acrescente, além da idade, com quantos a pessoa vai se aposentar.
-35 anos 
+Ex: escreva('Olá Mundo!')
+Saida:
+~~~~~~~~~~~
+Olá Mundo !
+~~~~~~~~~~~~
 
-093 Crie um programa que gerencie o aproveitamento de um jogador de 
-futebol. O programa vai ler o nome od jogador e quantas partidas ele jogou 
-Depois vai ler a quantidade de gols feitos em cada partida. No final, tudo
-isso será guardado em um dicionário. Incluindo o total de gols feitos
-durante o campeonato 
-Aproveitamento lista, tabela com todos os dados.
+098 Faça um programa que tenha uma função chamada contador() que receba tres
+parametros : inicio. fim e passo e realize a contagem
 
-094 Crie um programa que leia nome, sexo e idade de várias pessoas
-guardando os dados em um dicionario e todos os dicionarios em uma lista
-No final mostre:
-A) Quantas pessoas foram cadastradas.
-B) A média de idade do grupo.
-C) uma lista com todas as mulheres.
-D) Uma lista com todos as pessoas com idade acima da média.
+Seu programa tem que realizar tres contagens atraves da função criada:
 
-095 Aprimore o desafio 93 para que ele funcione com vários jogadores.
-Incluindo um sistema de visualização de detalhes do aproveitamento de
- cada jogador.
+A) de 1 á 10, de 1 em 1 
+B) de 10 á 0, de 2 em 2 
+C) Uma contagem personalizada.
+
+099 Faça um programa que tem uma função maior(), que receba vários parametros
+com valores inteiros.
+
+Seu programa tem que analisar todos os valores e dizer qual deles é o maior
+
+100 Faça um programa que tenha uma lista chamada numeros e duas funções chamadas
+sorteia() e somapar(). A Primeira função vai sortear 5 numeros e vai coloca-los 
+dentro da lista e a segunda função vai mostrar a soma entre todos os valores pares
+sorteados pela função anterior.
