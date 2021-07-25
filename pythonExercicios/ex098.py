@@ -16,15 +16,35 @@ texto2 =' \033[33m Função Contador \033[m '
 print(f'{texto2:*^50}')
 
 def contador(inicio, fim, passo):
-    print(f'A contagem de {inicio} até {fim} de {passo} em {passo}: ', end='')
-    for c in range(inicio, fim, passo):
-        print(f'{c}, ', end='')
-    print('')
-    print('-' * 30)
+    if passo < 0:
+        passo *= -1
+    if passo == 0:
+        passo = 1
+
+    print('-=' * 30)
+    print(f'A contagem de {inicio} até {fim} de {passo} em {passo}: ')
+
+    if inicio < fim:
+        cont = inicio
+        while cont <= fim:
+            print(f'{cont} ', end='')
+            sleep(0.4)
+            cont += passo
+        print(' FIM!')
+        print('-=' * 30)
+    else:
+        cont = inicio
+        while cont >= fim:
+            print(f'{cont} ', end='')
+            sleep(0.4)
+            cont -= passo
+        print(' FIM!')
+        print('-=' * 30)
 
 
-contador(1, 11, 1)
-contador(10, -2, -2)
+
+contador(1, 10, 1)
+contador(10, 0, 2)
 print('-' * 30)
 print('É hora de fazer uma contagem personalizada!')
 inicio = int(input('Informe o valor de inicio: '))

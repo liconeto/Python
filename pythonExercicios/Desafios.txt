@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 096 Faça um programa que tenha uma função chamada area(), que receba as dimensões
 de um terreno retangular (largura e comprimento) e mostre a área do terreno
 
@@ -29,32 +28,3 @@ Seu programa tem que analisar todos os valores e dizer qual deles é o maior
 sorteia() e somapar(). A Primeira função vai sortear 5 numeros e vai coloca-los 
 dentro da lista e a segunda função vai mostrar a soma entre todos os valores pares
 sorteados pela função anterior.
-=======
-096 Faça um programa que tenha um função chamada area(), que receba as 
-dimensões de um terreno retangular ( largura e comprimento ) e mostre
-a area do terreno.
-
-097 Faça um programa que tenha uma função chamada escreva, que receba um 
-texto qualquer como parâmetro e mostre uma mensagem com o tamanho adaptavel 
-Ex:
-escreva('Olá Mundo')
-
-098 Faça um programa que tenha uma função chamada contador(), que receba
-tres paremetros: inicio, fim e passo e realize a contagem.
-
-Seu programa tem que realizar três contagens atráves da função criada:
-A) De 1 até 10, de 1 em 1 
-B) De 10 até 0, de 2 em 2
-C) Uma contagem personalizada.
-
-099 Faça um programa que tenha uma função chamada maior(), que receba
-varios parametros com valores inteiros.
-
-Seu programa tem que analisar todos os valores e dizer qual deles é 
-o maior.
-
-100 Faça um programa que tenha uma lista chamada números e duas funções.
-chamadas sorteia() e somaPar(), A primeira função vai sortear números
-e vai coloca-los dentro da lista e a segunda função vai mostrar a soma
-entre todos os valores PARES sorteados pela função anterior.
->>>>>>> 152cb0da5bc271808422b94e54f74f430a13376c
