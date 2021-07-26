@@ -1,30 +1,40 @@
-096 Faça um programa que tenha uma função chamada area(), que receba as dimensões
-de um terreno retangular (largura e comprimento) e mostre a área do terreno
+101 Crie um programa que tem uma função chamada voto() que vai receber
+como parametro o ano de nascimento de ma pessoa, retornando um valor 
+literal indicando se uma pessoa tem voto NEGADO, OPCIONAL ou OBRIGATORIO
+ nas eleiçoes
+16->18 opçcional e -> 65, data do sistema.
 
-097 Faça um progrma que tenha uma função chamada escreva(), que receba um texto
-qualquer como parâmetro e mostre uma mensagem com tamanho adaptavel.
+102 Crie um programa que tenha uma função fatorial() que receba dois
+ parametros o primeiro que indique o numero a calcular e o outro chamado
+ show, que sera um valor lógico (opcional) indicandose serámostrado ou não
+ na telao processo de calculo do fatorial.
+docstrings
 
-Ex: escreva('Olá Mundo!')
-Saida:
-~~~~~~~~~~~
-Olá Mundo !
-~~~~~~~~~~~~
+103 Faça um programa que tena uma função chamada ficha(), que receba dois
+parametros opcionais: o nome de um jogador e quantos gols ele marcou
+O programa deverá ser capaz de mostrar a ficha de jogador, mesmo que 
+algum dado não tenha sido informado corretamente
+parametros opcionais
 
-098 Faça um programa que tenha uma função chamada contador() que receba tres
-parametros : inicio. fim e passo e realize a contagem
+104 Crie um programa que tenha uma função leiaInt(), que vai funcionar de
+forma semelhante a função input() do Python, só que fazendo a validação
+para aceitar apenas um valor numérico.
+ex:
+  n=leiaInt('Digiete um número')
+  
 
-Seu programa tem que realizar tres contagens atraves da função criada:
+105 Faaça um programa que tenha uma função notas(), que pode receber
+várias notas de alunos e vai retornar um dicionário com as seguintes 
+informações:
+  -Quantidade de notas 
+  -A maior notas
+  -A menor notas
+  -A média da turma
+  -A situação (opcional)
+ Adicione também as docstrings da função.
+situação >= 7 BOA, entre 5 e 6.9 razoavel e < 5 ruim
 
-A) de 1 á 10, de 1 em 1 
-B) de 10 á 0, de 2 em 2 
-C) Uma contagem personalizada.
-
-099 Faça um programa que tem uma função maior(), que receba vários parametros
-com valores inteiros.
-
-Seu programa tem que analisar todos os valores e dizer qual deles é o maior
-
-100 Faça um programa que tenha uma lista chamada numeros e duas funções chamadas
-sorteia() e somapar(). A Primeira função vai sortear 5 numeros e vai coloca-los 
-dentro da lista e a segunda função vai mostrar a soma entre todos os valores pares
-sorteados pela função anterior.
+106 Faça um mini-sistema que utilize o interactive Help do Python. O usuario
+vai digitar o comando e o manual vai aparecer. Quando o usuário digitar
+a palavra 'FIM', o programa se encerrará.
+OBS: use cores.
