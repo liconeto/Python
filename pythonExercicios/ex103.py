@@ -24,6 +24,15 @@ def ficha(jogador='Desconhecido', qgols=0):
 nome = str(input('Nome do jogador :'))
 qgols = str(input('quatidade de gols :'))
 
-print('-=' * 25)
-ficha(nome, qgols)
-print('=-' * 25)
+if qgols.isnumeric():
+    qgols = int(qgols)
+else:
+    qgols = 0
+if nome.strip() == '':
+    print('-=' * 25)
+    ficha(qgols=qgols)
+    print('=-' * 25)
+else:
+    print('-=' * 25)
+    ficha(nome, qgols)
+    print('=-' * 25)
