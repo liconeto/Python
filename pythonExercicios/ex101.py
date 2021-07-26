@@ -16,19 +16,26 @@ texto2 =' \033[35m Função VOTO! \033[m '
 print(f'{texto2:*^50}')
 nasc = 0
 def voto(anoN):
-    ano = date.year
+    """
+    -> calcula a idade do eleitor e retorna a informação se o voto é NEGADO, OPICIONAL ou OBRIGATORIO
+    :param anoN: recebe o ano de nascimento
+    :return: retorna uma STRING contendo as seguinte opções (NEGADO, OPICIONAL ou OBRIGATORIO)
+    """
+    ano = date.today().year
     idade = ano - anoN
-    if 16 < idade:
-        rVoto = 'NEGADO'
-    elif 16 > idade < 18 or idade > 65:
-        rVoto = 'OPICIONAL'
-    elif 18 > idade < 65:
-        rVoto = 'OBRIGATORIO'
+    #print(f'Ano do sistema {ano}')
+    print(f'Sua idade é : {idade}', end=', seu voto é: ')
+    if 16 > idade:
+        rVoto = '\033[1;31mNEGADO\033[m'
+    elif 16 <= idade < 18 or idade > 65:
+        rVoto = '\033[1;34mOPICIONAL\033[m'
+    elif 18 <= idade <= 65:
+        rVoto = '\033[1;32mOBRIGATORIO\033[m'
 
     return rVoto
 
 
-
+print(f'{help(voto)}')
 nasc = int(input('Digite seu ano de nascimento: '))
-msg = voto(nasc)
-print(f'{msg}')
+Rvoto = voto(nasc)
+print(f'{Rvoto}')

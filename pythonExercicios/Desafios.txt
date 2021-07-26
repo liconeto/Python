@@ -6,7 +6,7 @@ literal indicando se uma pessoa tem voto NEGADO, OPCIONAL ou OBRIGATORIO
 
 102 Crie um programa que tenha uma função fatorial() que receba dois
  parametros o primeiro que indique o numero a calcular e o outro chamado
- show, que sera um valor lógico (opcional) indicandose serámostrado ou não
+ show, que sera um valor lógico (opcional) indicando se será mostrado ou não
  na telao processo de calculo do fatorial.
 docstrings
 
