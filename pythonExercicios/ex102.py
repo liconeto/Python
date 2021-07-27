@@ -15,17 +15,26 @@ cores = {'vermelho':'\033[31m', 'verde':'\033[32m', 'amarelo':'\033[33m',
 texto2 =' \033[34m Função Fatorial melhorado \033[m '
 print(f'{texto2:*^50}')
 
-def fatorial(num =1, show=None):
+def fatorial(num =1, show=False):
+    """
+    ->Calcula do fatorial de um número indicado, com 2 parâmetros 'num' e 'show'
+    obeservar que os parâmetros são opcionais!
+    :param num: número inteiro qual será calculado o fatorial.
+    :param show: valor booleano 'True | False' sendo opicional para mostra ou não a etapa de calculo.
+    :return: o fatorial do parâmetro num
+    """
     f =1
     for c in range(num, 0, -1):
-        if show == True:
-            print(f'{c} ', end='')
+        if show == True :
+            print(f'\033[34m{c}\033[m ', end='')
+            if c > 1:
+                print('x ', end='')
         f *= c
     return f
 
 while True:
     try:
-        fat = int(input('O fatirial de que número? :'))
+        fat = int(input('O fatorial de que número? :'))
     except:
         print('Valor inválido, favor informar um número inteiro!')
     else:
@@ -41,4 +50,5 @@ if ver == 'S':
     ver =True
 else:
     ver=False
-print(f': {fatorial(fat, show=ver)}')
+print(f'{help(fatorial)}')
+print(f'= \033[1;31m{fatorial(fat, show=ver)}\033[m')
