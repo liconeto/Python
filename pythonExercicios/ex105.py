@@ -53,10 +53,33 @@ def notas(*valores, sit=False):
         informacoes = {'total': cont, 'menor': menor, 'maior': maior, 'media': media, 'situação': situacao}
     else:
         informacoes = {'total': cont, 'menor': menor, 'maior': maior, 'media': media}
-
     return informacoes
+def notas2(*valores, sit=False):
+    """
+        -> Função para analisar notas e situações de vários alunos.
+        :param valores: uma ou mais notas dos alunos (aceita várias)
+        :param sit: valor opcional, indicando se deve ou naos adicionar a situação
+        :return: dicionário com várias informações da turma
+        """
+    r=dict()
+    r['total'] = len(valores)
+    r['maoir'] = max(valores)
+    r['menor'] = min(valores)
+    r['media'] = sum(valores) / len(valores)
+    if sit:
+        if r['media'] >= 7:
+            r['situacao'] = 'BOA'
+        elif r['media'] >= 5:
+            r['situacao'] = 'Razoavel'
+        else:
+            r['situacao'] = 'RUIM'
+    return r
 
 
-resp =(notas(10, 5, 6, 10, 7, sit=True))
+
+resp =notas(10, 5, 6, 10, 7, sit=True)
 print(f'{resp}')
 help(notas)
+resp2 = notas2(10, 5, 6, 10, 7, sit=True)
+print(f'{resp2}')
+help(notas2)
