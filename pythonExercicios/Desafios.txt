@@ -1,40 +1,26 @@
-101 Crie um programa que tem uma função chamada voto() que vai receber
-como parametro o ano de nascimento de ma pessoa, retornando um valor 
-literal indicando se uma pessoa tem voto NEGADO, OPCIONAL ou OBRIGATORIO
- nas eleiçoes
-16->18 opçcional e -> 65, data do sistema.
+107 Crie um modulo chamado moeda.py que tenha as funções incorporadas aumentar()
+diminuir() e metade().
 
-102 Crie um programa que tenha uma função fatorial() que receba dois
- parametros o primeiro que indique o numero a calcular e o outro chamado
- show, que sera um valor lógico (opcional) indicando se será  mostrado ou não
- na telao processo de calculo do fatorial.
-docstrings
+Faça tambem um programa que incorpore esse modulo e use algumas dessas funções.
 
-103 Faça um programa que tena uma função chamada ficha(), que receba dois
-parametros opcionais: o nome de um jogador e quantos gols ele marcou
-O programa deverá ser capaz de mostrar a ficha de jogador, mesmo que 
-algum dado não tenha sido informado corretamente
-parametros opcionais
+108 Adapte o código do 107, criando uma função adicional chamada moeda() que consiga
+mostrar os valores como um valor monetário formatado.
 
-104 Crie um programa que tenha uma função leiaInt(), que vai funcionar de
-forma semelhante a função input() do Python, só que fazendo a validação
-para aceitar apenas um valor numérico.
-ex:
-  n=leiaInt('Digiete um número')
-  
+109 Modifique as funções que foram criadas no 107 para que elas aceitem um parametro 
+a mais, informando se o valor retornará formatado ou não formatado pela função moeda()
+desenvolvida no 108
 
-105 Faaça um programa que tenha uma função notas(), que pode receber
-várias notas de alunos e vai retornar um dicionário com as seguintes 
-informações:
-  -Quantidade de notas 
-  -A maior notas
-  -A menor notas
-  -A média da turma
-  -A situação (opcional)
- Adicione também as docstrings da função.
-situação >= 7 BOA, entre 5 e 6.9 razoavel e < 5 ruim
+110 Adicione ao modulo moeda.py criado nos desafios anteriores um função chamada
+resumo(), que mostre na tela algumas informações geradas pelas funções que já temos
+no modulo criado até aqui.
 
-106 Faça um mini-sistema que utilize o interactive Help do Python. O usuario
-vai digitar o comando e o manual vai aparecer. Quando o usuário digitar
-a palavra 'FIM', o programa se encerrará.
-OBS: use cores.
+111 Crie um pacote chamado utilidadesCEV que tenha dois modulos internos chamados
+moeda e dado.
+
+Transfira todas as funções utilizadas nos desafios 107, 108, 109 e 110 para o primeiro 
+pacote e mantenha tudo funcionando.
+
+112 Dentro do pacote utilidadesCEV que criamos no desafio 111, temos um modulo chamado
+dado. Crie uma função chamada leiaDinheiro() que seja capaz de funcionar como a funcao
+input(), mas com uma validação de dados para aceitar apenas valores que sejam 
+monetarios.
