@@ -1,26 +1,27 @@
-107 Crie um modulo chamado moeda.py que tenha as funções incorporadas aumentar()
-diminuir() e metade().
+107 Crie um modulo chamado moeda.py que tenha as funções incorporadas 
+aumentar() diminuir() e metade().
 
-Faça tambem um programa que incorpore esse modulo e use algumas dessas funções.
+Faça tambem um programa que incorpore esse modulo e use algumas dessas 
+funções.
 
-108 Adapte o código do 107, criando uma função adicional chamada moeda() que consiga
-mostrar os valores como um valor monetário formatado.
+108 Adapte o código do 107, criando uma função adicional chamada moeda()
+ que consiga mostrar os valores como um valor monetário formatado.
 
-109 Modifique as funções que foram criadas no 107 para que elas aceitem um parametro 
-a mais, informando se o valor retornará formatado ou não formatado pela função moeda()
-desenvolvida no 108
+109 Modifique as funções que foram criadas no 107 para que elas aceitem um
+ parametro a mais, informando se o valor retornará formatado ou não 
+ formatado pela função moeda() desenvolvida no 108
 
-110 Adicione ao modulo moeda.py criado nos desafios anteriores um função chamada
-resumo(), que mostre na tela algumas informações geradas pelas funções que já temos
-no modulo criado até aqui.
+110 Adicione ao modulo moeda.py criado nos desafios anteriores um função 
+chamada resumo(), que mostre na tela algumas informações geradas pelas 
+funções que já temos no modulo criado até aqui.
 
-111 Crie um pacote chamado utilidadesCEV que tenha dois modulos internos chamados
-moeda e dado.
+111 Crie um pacote chamado utilidadesCEV que tenha dois modulos internos 
+chamados moeda e dado.
 
-Transfira todas as funções utilizadas nos desafios 107, 108, 109 e 110 para o primeiro 
-pacote e mantenha tudo funcionando.
+Transfira todas as funções utilizadas nos desafios 107, 108, 109 e 110 para
+ o primeiro pacote e mantenha tudo funcionando.
 
-112 Dentro do pacote utilidadesCEV que criamos no desafio 111, temos um modulo chamado
-dado. Crie uma função chamada leiaDinheiro() que seja capaz de funcionar como a funcao
-input(), mas com uma validação de dados para aceitar apenas valores que sejam 
-monetarios.
+112 Dentro do pacote utilidadesCEV que criamos no desafio 111, temos um 
+modulo chamado dado. Crie uma função chamada leiaDinheiro() que seja capaz
+ de funcionar como a funcao input(), mas com uma validação de dados para 
+ aceitar apenas valores que sejam monetarios.

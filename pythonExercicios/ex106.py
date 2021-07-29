@@ -5,7 +5,7 @@ from time import sleep
 from random import randint
 from operator import itemgetter
 
-texto = ' \033[1;31m Desafio 105 \033[m '
+texto = ' \033[1;31m Desafio 106 \033[m '
 print('{:*^50}'. format(texto))
 
 limpa = '\033[m'
