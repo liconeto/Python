@@ -61,6 +61,13 @@ def moeda(num=0, moeda='R$'):
 
 
 def resumo(num=0, pctS=10, pctD=5):
+    """
+    -> Função de resumo de calculos de outras funções!
+    :param num: valor base de calculo
+    :param pctS: porcentagem de aumento, default 10%
+    :param pctD: porcentagem de redução, default 5%
+    :return: sem retorno valores impressos na tela
+    """
     vlDobro = dobro(num, True)
     vlrMetade =metade(num, True)
     vlrMaior = aumentar(num, pctS, True)
