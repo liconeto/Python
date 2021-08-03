@@ -1,27 +1,12 @@
-107 Crie um modulo chamado moeda.py que tenha as funções incorporadas 
-aumentar() diminuir() e metade().
+113 Reescreva a função leiaInt() que fizemos no desafio 104, incluindo agora
+ a possibilidade da digitação de um número de tipo inválido. Aproveite e crie
+ também uma função leiaFloat() com a mesma funcionalidade.
+ 
+114 Crie um código em Python que teste se o site Pudim está acessivel pelo
+ computador usado.
 
-Faça tambem um programa que incorpore esse modulo e use algumas dessas 
-funções.
+115 Crie um pequeno sistema modularizado que permita cadastrar pessoas
+pelo seu nome e idade em um arquivo de texto simples.
 
-108 Adapte o código do 107, criando uma função adicional chamada moeda()
- que consiga mostrar os valores como um valor monetário formatado.
-
-109 Modifique as funções que foram criadas no 107 para que elas aceitem um
- parametro a mais, informando se o valor retornará formatado ou não 
- formatado pela função moeda() desenvolvida no 108
-
-110 Adicione ao modulo moeda.py criado nos desafios anteriores um função 
-chamada resumo(), que mostre na tela algumas informações geradas pelas 
-funções que já temos no modulo criado até aqui.
-
-111 Crie um pacote chamado utilidadesCEV que tenha dois modulos internos 
-chamados moeda e dado.
-
-Transfira todas as funções utilizadas nos desafios 107, 108, 109 e 110 para
- o primeiro pacote e mantenha tudo funcionando.
-
-112 Dentro do pacote utilidadesCEV que criamos no desafio 111, temos um 
-modulo chamado dado. Crie uma função chamada leiaDinheiro() que seja capaz
- de funcionar como a funcao input(), mas com uma validação de dados para 
- aceitar apenas valores que sejam monetarios.
+O sistema só vai ter 2 opções: cadastrar uma nova pessoa e listar todas as
+ pessoas cadastradas.
