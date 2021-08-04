@@ -11,9 +11,8 @@ print('{:*^50}'. format(texto))
 limpa = '\033[m'
 cores = {'vermelho':'\033[31m', 'verde':'\033[32m', 'amarelo':'\033[33m',
          'azul':'\033[34m', 'roxo':'\033[35m', 'ciano':'\033[36m', 'cinza':'\033[37m'}
-
-texto2 =' \033[35m Função LeiInt LeiaFloat \033[m '
-print(f'{texto2:*^50}')
+texto2 =' \033[35mFunção LeiaInt e LeiaFloat com validação de dados!\033[m '
+print(f'{texto2:*^70}')
 
 def leiaInt(msg):
     while True:
@@ -29,21 +28,6 @@ def leiaInt(msg):
     print(f'Você digitou o número inteiro \033[34m{inteiro}\033[m')
 
 
-def leiaInt2(msg):
-    ok = False
-    valor = 0
-    while True:
-        n= str(input(msg))
-        if n.isnumeric():
-            valor=int(n)
-            ok = True
-        else:
-            print('\033[1;31mValor Inválido, digite um número inteiro!\033[m')
-        if ok:
-            break
-    return valor
-
-
 def leiaFloat(msg):
     while True:
         try:
@@ -54,7 +38,6 @@ def leiaFloat(msg):
             break
     return n
 
-n = leiaInt('Digite um valor: ')
-n = leiaInt2('Digite um valor: ')
-print(f'Valor de N {n}')
-n= leiaFloat('Digite um valor real!')
+n = leiaInt('Digite um valor Inteiro: ')
+n2 = leiaFloat('Digite um valor Real: ')
+print(f'Valor de Inteiro é : \033[34m{n}\033[m e o valor real é : \033[36m{n2}\033[m ')
