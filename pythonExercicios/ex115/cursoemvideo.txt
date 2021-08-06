@@ -1,3 +1,10 @@
+<<<<<<< HEAD
 André Mauricio;35
 DanielSantos;44
 Pedro Silva;29
+=======
+Luis 33
+Aguinaldo 68
+Fabiano 42
+Walmir 39
+>>>>>>> dec42ce38ea86837b5fa96714d30ec149361c45f

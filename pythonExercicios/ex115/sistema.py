@@ -9,9 +9,13 @@ while True:
         lerArquivo()
     elif resp == 2:
         cabecalho('Opção  2')
+<<<<<<< HEAD
         nome =str(input('Informe nome: '))
         idade =int(input('Informe a idade: '))
         dado = nome +';'+ str(idade)
+=======
+        dado =str(input('Informe nome ; idade: '))
+>>>>>>> dec42ce38ea86837b5fa96714d30ec149361c45f
         escreveArquivo(dado+'\n')
     elif resp == 3:
         cabecalho('Saindo do sistema... Até logo!')
