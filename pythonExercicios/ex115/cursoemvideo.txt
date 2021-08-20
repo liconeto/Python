@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+André Mauricio;35
+DanielSantos;44
+Pedro Silva;29
+=======
 Luis 33
+<<<<<<< HEAD
 FelipeVarela 65
 Wlamir Teixeira 445
+=======
+Aguinaldo 68
+Fabiano 42
+Walmir 39
+>>>>>>> dec42ce38ea86837b5fa96714d30ec149361c45f
+>>>>>>> eefcaa1bc1bb81269ee4fa39c245f701a24105ca
