@@ -12,21 +12,27 @@ class Televisao:
 
 
     def aumenta_canal(self):
-        self.canal += 1
+        if self.ligada:
+            self.canal += 1
 
 
     def diminiu_canal(self):
-        self.canal -= 1
+        if self.ligada:
+            self.canal -= 1
 
-televisao = Televisao()
-print(f'Televisão está ligada? {televisao.ligada}')
-televisao.power()
-print(f'Televisão está ligada? {televisao.ligada}')
-televisao.power()
-print(f'Televisão está ligada? {televisao.ligada}')
-print(f'Canal : {televisao.canal}')
-televisao.aumenta_canal()
-televisao.aumenta_canal()
-print(f'Canal : {televisao.canal}')
-televisao.diminiu_canal()
-print(f'Canal : {televisao.canal}')
+print(__name__)
+
+if __name__ == '__main__':
+    televisao = Televisao()
+    print(f'Televisão está ligada? {televisao.ligada}')
+    televisao.power()
+    print(f'Televisão está ligada? {televisao.ligada}')
+    televisao.power()
+    print(f'Televisão está ligada? {televisao.ligada}')
+    televisao.power()
+    print(f'Canal : {televisao.canal}')
+    televisao.aumenta_canal()
+    televisao.aumenta_canal()
+    print(f'Canal : {televisao.canal}')
+    televisao.diminiu_canal()
+    print(f'Canal : {televisao.canal}')
