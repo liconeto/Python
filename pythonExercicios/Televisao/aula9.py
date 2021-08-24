@@ -1,3 +1,4 @@
+import shutil
 
 def escrever_arquivo(texto):
     arquivo = open('teste.txt','w')
@@ -25,17 +26,34 @@ def media_notas(nome_arquivo):
     for aluno in aluno_nota:
         lista_notas = aluno.split(',')
         alunoN = lista_notas[0]
-        print(alunoN)
+        #print(alunoN)
         lista_notas.pop(0)
         media = lambda notas: sum([int(i) for i in notas]) / 4
         lista_media.append({aluno:media(lista_notas)})
     return lista_media
         #print(media(lista_notas))
 
+
+def copia_arquivo(nome_arquivo):
+    shutil.copy(nome_arquivo,'C:/Python/pythonExercicios/Televisao/dados/')
+
+
+def move_arquivo(nome_arquivo):
+    shutil.move(nome_arquivo,'C:/Python/pythonExercicios/Televisao/dados/')
+
+
 if __name__ == '__main__':
-    lista_media = media_notas('notas.txt')
-    print(lista_media)
+    #move_arquivo('notas.txt')
+    #copia_arquivo('notas.txt')
+    #lista_media = media_notas('notas.txt')
+    #print(lista_media)
     #escrever_arquivo('Primeira linha. \n')
-    #aluno = '\nCesar,7,9,3,8'
+    aluno = media_notas('notas.txt')
+    aluno_str =''
+    for c in aluno[:]:
+        aluno_str = str(c)
+        atualizar_arquivo('media_notas.txt', aluno_str)
+
     #atualizar_arquivo('notas.txt',aluno)
     #ler_arquivo('teste.txt')
+    print(f'{aluno_str}')

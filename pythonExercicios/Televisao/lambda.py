@@ -4,7 +4,7 @@ lista_animais = ['cachorro', 'gato', 'elefante']
 print(contador_letras(lista_animais))
 
 soma = lambda a, b: a+b
-subtracao = lambda  a, b: a-b
+subtracao = lambda a, b: a-b
 
 print(f'{soma(5,10)}')
 print(f'{subtracao(10, 5)}')
