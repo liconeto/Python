@@ -1,0 +1,43 @@
+Agenda
+	* DJANGO-ADMIN
+		Utilitario responsavel pelos comando do Django realiza as
+		tarefas administrativa
+		
+	* MANAGE
+		é um wrapper que delega as tarefas ao Django-ADMIN.
+		
+	* WSGI
+		Web Server Gateway Interface - Interface de porta de
+		entrada do servidor web
+		Plataforma de alicação web em Python
+		
+	* SETTINGS
+		Responsavel pelas configurações do Django
+		Confiurar, apps, conexão com banco, segurança e etc...
+		
+	* URLS
+		É um schema de URLS
+		Responsavel por gerenciar as Url´schema
+		
+	* VIEWS
+		Responsavel por processar e retornar uma resposta para
+		o cliente
+		
+	* MODELS
+		Define o modelo de dados inteiramente em Python
+		Faz a abstração dos objetos de banco de dados para Python,
+		Onde o Django realiza a transformação para SQL
+		
+	* ADMIN
+		Interface administrativa gerada pelo Django
+		Ele lê os metadados e gera a parte adminidtrativa do Django 
+		
+	* STATIC
+		Responsavel por armazenar os arquivos estáticos
+		Css, JavaScript, Imagens
+		
+	* TEMPLATES
+		Responsavel por armazenar os arquivos HTML
+		O diretorio templates é o diretorio padrao para armazenarmos
+		todo o conteudo HTML da nossa aplicação.
+		
