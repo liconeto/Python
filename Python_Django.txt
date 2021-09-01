@@ -41,3 +41,8 @@ Agenda
 		O diretorio templates é o diretorio padrao para armazenarmos
 		todo o conteudo HTML da nossa aplicação.
 		
+	* Criar classes no models
+	* Como migrar a classe criada para o banco de dados 
+	* Como alterar um classe de dados e replicar para o banco de dados
+	* Como registrar a classe no Django ADMIN
+		

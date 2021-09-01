@@ -1,0 +1,7 @@
+Flipper
+home = C:\Users\assistec.FLIPPER\AppData\Local\Programs\Python\Python38
+
+Casa
+home = C:\Users\Mariana\AppData\Local\Programs\Python\Python38\
+
+
