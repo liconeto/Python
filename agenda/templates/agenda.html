@@ -1,6 +1,6 @@
-(% extends "model-page.html" %)
+{% extends "model-page.html" %}
 
-(% block content %)
+{% block content %}
     <h2>Agendamentos</h2>
 
     <ul style="font-size: 18px">
@@ -8,4 +8,4 @@
         <li>{{evento.titulo}} - {{evento.get_data_evento}}</li>
     {% endfor %}
     </ul>
-(% endblock %)
+{% endblock %}
