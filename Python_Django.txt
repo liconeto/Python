@@ -46,3 +46,42 @@ Agenda
 	* Como alterar um classe de dados e replicar para o banco de dados
 	* Como registrar a classe no Django ADMIN
 		
+		
+	* Congurar templates
+	* Criar uma pagina html
+	* Listar todos os eventos
+	* Listar eventos por usuário
+	
+		'django.contrib.auth'
+	* Pacote de autenticação do Django
+	* Funções authenticate, login, logout, message, login_required
+		**autenticate
+			importação:
+				from django.contrib.auth import authenticate
+			utilização:
+				user = authenticate(username=username, password=password)
+		
+		**login
+			importação:
+				from django.contrib.auth import login
+			utilização:
+				login(request, user)
+			
+		**logout
+			importação:
+				from django.contrib.auth import logout
+			utilização:
+				logout(request)
+			
+		** login_required
+			importação:
+				from django.contrib.auth.decorators import login_required
+			utilização:
+				@login_required(login_url='/login/')
+				def lista_eventos(request):
+				
+	* Decoradores
+		São funções que usadas sobre outras funções.
+	* Implementeção login
+	* Implementação Logout 
+	
