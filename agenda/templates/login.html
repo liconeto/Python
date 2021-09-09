@@ -6,12 +6,20 @@
 </head>
 <body>
     <h1>Login</h1>
+    <form action="submit" method="POST">{% csrf_token %}
+        <div align="center">
+            <label>Usuário:</label>
+            <input type="text" name="username">
+            <label>Password:</label>
+            <input type="password" name="password">
+            <button type="submit">Entrar</button>
+        </div>
+    </form>
 
-    <label>Usuário:</label>
-    <input type="text" name="username">
-    <label>Password:</label>
-    <input type="password" name="password">
-    <button type="submit">Entrar</button>
-
+    {% for message in messages %}
+        <div align="center">
+            <strong>Erro!</strong> {{ message }}
+        </div>
+    {% endfor %}
 </body>
 </html>
