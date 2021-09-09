@@ -85,3 +85,18 @@ Agenda
 	* Implementeção login
 	* Implementação Logout 
 	
+	* Criar página de Inserção
+	* Criar form para submit da inserção
+	* Função create
+	
+	* Acrecente um campo na tabela de Eventos com o nome local
+	* Esse campo pode ser branco e pode ser nulo
+	* Adicione o campo local no template de inserção e faça com
+	  que o mesmo seja inserido junto com os demais dados
+	
+	* Criar rotas para edição e exclusao
+	* Reaproveitamento de template de inclusão para realizar a alteração
+	* função delete
+	* Função update
+	
+	
