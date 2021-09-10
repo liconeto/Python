@@ -102,7 +102,11 @@ Agenda
 	* Criar Filtros mais elaborados
 	* Alterar HTML conforme determinada condicional
 	* Configurar Time ZOne
+		* language = 'pt-br'
+		* TimeZone = 'America/Sao_Paulo'
 	* Exceção através Http404 do pacote http;response
+		* Modo Debug = False
+		
 	* Retorno em Json através do JsonReponse do pacote Http.response
 	
 	
