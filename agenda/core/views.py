@@ -3,6 +3,7 @@ from core.models import Evento
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
+from datetime import datetime, timedelta
 # Create your views here.
 
 def login_user(request):
@@ -32,8 +33,10 @@ def submit_login(request):
 def lista_eventos(request):
 
     usuario = request.user
+    data_atual = datetime.now() - timedelta(hours=1)
     #evento = Evento.objects.all()
-    evento = Evento.objects.filter(usuario=usuario)
+    evento = Evento.objects.filter(usuario=usuario,
+                                   data_evento__gt=data_atual)
     dados = {'eventos':evento}
     return render(request, 'agenda.html', dados)
 
@@ -54,11 +57,27 @@ def submit_evento(request):
         descricao = request.POST.get('descricao')
         local = request.POST.get('local')
         usuario = request.user
-        Evento.objects.create(titulo=titulo,
-                              data_evento=data_evento,
-                              descricao=descricao,
-                              local=local,
-                              usuario=usuario)
+        id_evento = request.POST.get('id_evento')
+        if id_evento:
+            evento = Evento.objects.get(id=id_evento)
+            if evento.usuario == usuario:
+                evento.titulo = titulo
+                evento.descricao = descricao
+                evento.local = local
+                evento.data_evento = data_evento
+                evento.save()
+
+            #Evento.objects.filter(id=id_evento).update(titulo=titulo,
+            #                                           data_evento=data_evento,
+            #                                           descricao=descricao,
+            #                                           local=local)
+
+        else:
+            Evento.objects.create(titulo=titulo,
+                                  data_evento=data_evento,
+                                  descricao=descricao,
+                                  local=local,
+                                  usuario=usuario)
 
     return redirect('/')
 

@@ -99,4 +99,11 @@ Agenda
 	* função delete
 	* Função update
 	
+	* Criar Filtros mais elaborados
+	* Alterar HTML conforme determinada condicional
+	* Configurar Time ZOne
+	* Exceção através Http404 do pacote http;response
+	* Retorno em Json através do JsonReponse do pacote Http.response
+	
+	
 	
