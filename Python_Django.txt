@@ -108,6 +108,13 @@ Agenda
 		* Modo Debug = False
 		
 	* Retorno em Json através do JsonReponse do pacote Http.response
+	* Exercício para praticar 
+		* Deixe em amarelo eventos que faltam menos de uma hora para o inicio.
+		* Acrescente retorno 404 para todas as URL´s que o usuário tentar
+		acessar  um registro que não existe ou que não pretence a ele.
+		* Crie uma nova tela que mostra apenas os eventos já passados
+		(histórico de eventos )
+	
 	
 	
 	

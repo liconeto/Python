@@ -104,5 +104,15 @@ def json_lista_evento(request, id_usuario):
 
     return JsonResponse(list(evento), safe=False)
 
+@login_required(login_url='/login/')
+def historico_evento(request):
+    usuario = request.user
+    data_atual = datetime.now() - timedelta(hours=1)
+    # evento = Evento.objects.all()
+    evento = Evento.objects.filter(usuario=usuario,
+                                   data_evento__lt=data_atual)
+    dados = {'eventos': evento}
+    return render(request, 'historico-agenda.html', dados)
+
 #def index(request):
 #   return redirect('/agenda/')
