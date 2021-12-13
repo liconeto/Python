@@ -1,6 +1,6 @@
 from builtins import print
 from datetime import date
-from emoji import emojize
+'from emoji import emojize'
 from time import sleep
 from random import randint
 from operator import itemgetter

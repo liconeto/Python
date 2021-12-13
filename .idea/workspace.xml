@@ -4,7 +4,13 @@
     <bookmark url="file://$PROJECT_DIR$/EXE/exe03.py" line="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ae223d8-ddcb-431e-b99b-b1b29e2157e3" name="Default" comment="" />
+    <list default="true" id="0ae223d8-ddcb-431e-b99b-b1b29e2157e3" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Antigos/Triangulo_Sierspinki.py" beforeDir="false" afterPath="$PROJECT_DIR$/Antigos/Triangulo_Sierspinki.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonExercicios/ex113.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonExercicios/ex113.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +115,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.Triangulo_Sierspinki">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\workspace\Python\Ping" />
+      <recent name="C:\workspace\Python\Python\Ping" />
+      <recent name="C:\workspace\Python\Python" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Tree_recursiva">
     <configuration name="Pentagrama" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -229,14 +242,15 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Tree_recursiva" />
         <item itemvalue="Python.Triangulo_Sierspinki" />
         <item itemvalue="Python.Turtle_forms2" />
         <item itemvalue="Python.Turtle_forms" />
-        <item itemvalue="Python.Tree_recursiva" />
         <item itemvalue="Python.Pentagrama" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -281,8 +295,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Turtle_forms.py">
