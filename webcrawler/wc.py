@@ -1,5 +1,3 @@
-import _operator
-
 from bs4 import BeautifulSoup
 import requests
 import operator
@@ -59,4 +57,4 @@ def create_dictionary(clea_list):
 
 
 if __name__ == '__main__':
-    start("https://www.geeksforgeeks.org/python-programing-language/?ref=leftbar")
+    start("https://www.geeksforgeeks.org/django-basics/")
